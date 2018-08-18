@@ -72,10 +72,15 @@ p {
   color: black;
 }
 #icon-grid-container {
+  padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 70px;
+  grid-gap: 50px;
 }
+#codewars {
+  width: 30px;
+}
+
 #projects {
   margin: 0 auto;
   text-align: center;
