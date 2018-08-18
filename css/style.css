@@ -95,6 +95,7 @@ p {
   align-items: start;
 }
 .project-tile {
+  height: 340px;
   background-color: #e6e4e3;
  }
 .project-tile p {
@@ -103,8 +104,8 @@ p {
   padding: 10px;
 }
 .project-tile img {
-  width: 200px;
-  padding: 0 5px;
+  height: 200px;
+  padding: 0 10px;
 }
 .project-tile h3 {
   padding-bottom: 0;
@@ -175,14 +176,11 @@ textarea:hover, textarea:focus {
   color: #ff6969;
   text-decoration: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #project-grid-container {
-    padding: 0 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-    }
+    grid-gap: 10px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #project-grid-container {
     padding: 0 10px;
     grid-template-columns: repeat(1, 1fr);
