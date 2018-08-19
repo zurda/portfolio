@@ -48,7 +48,7 @@ h3 {
   padding-bottom: 20px;
 }
 p {
-  font-size: 24px;
+  font-size: 22px;
   padding-bottom: 18px;
 }
 #welcome-section {
@@ -58,6 +58,9 @@ p {
 }
 #welcome-section div {
   padding-top: 50px;
+}
+#more {
+  display: none;
 }
 #projects, #contact {
   padding-top: 50px;
@@ -134,7 +137,7 @@ input {
 #email:focus {   
   outline: none;
 }
-#submit {
+#submit-btn, #read-more-btn {
   font-size: 18px;
   padding: 5px 15px;
   background-color: #ff6969;
@@ -166,16 +169,17 @@ textarea:hover, textarea:focus {
   max-width: 800px;
 }
 /* footer */ 
-#credit {
+.credit {
   padding: 8px 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   background: #f5f5f5;
   color: #ff6969;
 }
-#credit a {
-  color: #ff6969;
+.credit a {
+  color: #ff3333;
   text-decoration: none;
+  font-weight: bold;
 }
 @media only screen and (max-width: 900px) {
   #project-grid-container {
