@@ -28,8 +28,9 @@
 <section id="welcome-section">
   <div class="section-content">
     <h1>Hi, my name is Michal.</h1>
-    <p>I'm an aspiring Web Developer,</br>and I'm passionate about building intuitive and beautiful UI's.</p>
+    <p>I'm an aspiring Web Developer,</br>and I'm passionate about building intuitive and beautiful UI's.<span id="line-breaks"><br><br></span><span id="more"><br><br>I'm an Ex-journalist and self taught programmer. I began my career transition a couple of years ago as part of a group called SheCodes. Since then, I've leanred HTML, CSS, JavaScript, and Python, which lead me to a role in a startup that teaches Data Science. I helped students make a similar transition into computer science related fields, which was extremely rewarding.<br>I fell in love with working on websites' code and discovering their structure, and my goal is to keep learning so that I could build simple yet beautiful UI's.</span></p>
 
+    <button onclick="readMore()" id="read-more-btn">Read more</button>
   
 
     <div id="icon-grid-container">
@@ -92,7 +93,7 @@
         <label for="email">Email: </label>
         <input id="email" type="email" name="email" placeholder="email" required />
         
-        <input id="submit" type="submit" value="Submit"></input>
+        <input id="submit-btn" type="submit" value="Submit"></input>
       </div>
 
         <div class="thankyou_message" style="display:none;">
@@ -104,7 +105,7 @@
   </section>
 
 <!-- footer section --> 
-<footer id="credit">Created by <a id="profile-link" class="white-link" href="https://github.com/hakabuk" target="_blank">Michal Weizman</a></footer>
+<footer class="credit">Created by <a id="profile-link" class='footer-link' href="https://github.com/zurda" target="_blank">Michal Weizman</a><br>This site's code is available on <a class='footer-link' href="https://github.com/zurda/one-page-website" target='_blank'>Github</a>.</footer>
 <script type="text/javascript" src="scripts/script.js"></script>
 <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
 </body>
