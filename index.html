@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Michal Weizman</title>
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@
 <section id="welcome-section">
   <div class="section-content">
     <h1>Hi, my name is Michal.</h1>
-    <p>I'm an aspiring Web Developer,</br>and very passionate about building intuitive and beautiful UI's.</p>
+    <p>I'm an aspiring Web Developer,</br>and I'm passionate about building intuitive and beautiful UI's.</p>
 
   
 
@@ -53,7 +53,7 @@
           <p>Project requirement for Free Code Camp. A product landing page built with HTML and CSS.</p>
       </div>
       <div class="project-tile">
-        <a href="https://zurda.github.io/React-TicTacToe/">
+        <a href="https://zurda.github.io/React-TicTacToe/" target="_blank">
           <h3>Tic Tac Toe</h3>
           <img src="img/projects/tic-tac-toe.png">
         </a>
@@ -80,18 +80,32 @@
 
   <section id="contact">
     <h3>Contact</h3>
-      <form id="form" action="">
-        <p id="textarea-question">Please fill in your area of interestd in the box below:</p></div>
-      <textarea name="comment" class="glowing-border">e.g: Where are you based, what kind of project did you have in mind, etc</textarea><br>
+      <form class="gform" method="POST" 
+      action="https://script.google.com/macros/s/AKfycbzwwgBYe168NyuTDfTzYBVOGfXWrUd58ZXPt8rp4g/exec">
+
+      <div class="form-elements">
+        
+        <p id="textarea-question">Please fill in your area of interestd in the box below:</p>
+        
+        <textarea name="message" class="glowing-border">e.g: Where are you based, what kind of project did you have in mind, etc</textarea><br>
+        
         <label for="email">Email: </label>
         <input id="email" type="email" name="email" placeholder="email" required />
+        
         <input id="submit" type="submit" value="Submit"></input>
+      </div>
+
+        <div class="thankyou_message" style="display:none;">
+          <p id='thankYouMessage'>Thanks for contacting me,<br>
+            I will get back to you soon!</p>
+        </div>
+      
       </form>
   </section>
 
 <!-- footer section --> 
 <footer id="credit">Created by <a id="profile-link" class="white-link" href="https://github.com/hakabuk" target="_blank">Michal Weizman</a></footer>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
 </body>
-<script src="scripts/script.js"></script>
-
 </html>
