@@ -28,13 +28,15 @@ html, body {
   position: fixed; 
   top: 0; 
   width: 100%;
+  text-align: right;
 }
-#navbar a {
+
+#nav-welcome-section,
+#nav-projects,
+#nav-contact {
   text-decoration: none;
-  padding: 0 20px;
-  color: pink;
-  text-align: center;
-  text-decoration: none;
+  padding: 0 30px 10px 30px;
+  color: #ff6969;
 }
 h1, h3 {
   font-family: 'Rambla', sans-serif;
@@ -50,6 +52,9 @@ h3 {
 p {
   font-size: 22px;
   padding-bottom: 18px;
+}
+.active {
+  border-bottom: 15px solid #9fe3c3;
 }
 #welcome-section {
   background-color: #9fe3c3;
@@ -191,4 +196,11 @@ textarea:hover, textarea:focus {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     }
+    #nav-welcome-section,
+    #nav-projects,
+    #nav-contact {
+  text-decoration: none;
+  padding: 0 20px 10px 20px;
+  color: #ff6969;
+}
 }
