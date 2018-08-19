@@ -159,7 +159,8 @@ textarea{
 textarea:hover, textarea:focus { 
     border-color: #C9C9C9; 
 }
-#textarea-question {
+#textarea-question,
+#thankYouMessage {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
