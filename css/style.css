@@ -242,6 +242,9 @@ textarea:hover, textarea:focus {
   h1 {
   padding-top: 100px;
 }
+  #more {
+    font-size: 18px;
+  }
 @media only screen and (max-width: 500px) {
   #project-grid-container {
     padding: 0 10px;
