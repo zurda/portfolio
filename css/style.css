@@ -47,7 +47,7 @@ h1 {
   padding-bottom: 3vh;
 }
 h3 {
-  font-size: 30px;
+  font-size: 40px;
   padding-bottom: 20px;
 }
 p {
@@ -107,9 +107,6 @@ p {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-
-
 
 #projects, #contact {
   padding-top: 50px;
@@ -202,19 +199,20 @@ input {
 textarea{
   padding: 5px; 
   border: solid 1px #E5E5E5; 
-  font: normal 13px/100% Verdana, Tahoma, sans-serif; 
-  width: 300px; 
-  height: 150px;
+  font: normal 16px/100% Verdana, Tahoma, sans-serif; 
+  width: 400px; 
+  height: 200px;
   background: #FFFFFF; 
   box-sizing: border-box;
 }
 textarea:hover, textarea:focus { 
     border-color: #C9C9C9; 
+    outline: 0 none;
 }
 #textarea-question,
 #thankYouMessage {
   font-size: 18px;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 800px;
 }
 /* footer */ 
@@ -257,5 +255,8 @@ textarea:hover, textarea:focus {
   text-decoration: none;
   padding: 0 20px 10px 20px;
   color: #ff6969;
-}
+  }
+  textarea {
+    max-width: 90%;
+  }
 }
