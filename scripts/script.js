@@ -23,6 +23,9 @@
                     id = href.substr(href.indexOf('#') + 1);
                 if (element = document.getElementById(id))
                 {
+                    const current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    document.getElementById("nav-"+id).className += " active";
 
                     var hop_count = (speed - (speed % moving_frequency)) / moving_frequency, // Always make an integer
                         getScrollTopDocumentAtBegin = getScrollTopDocument(),
@@ -64,47 +67,6 @@
         return window.pageYOffset !== undefined ? window.pageYOffset : document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
     };
 })(window);
-
-
-// cut the mustard
-if ('querySelector' in document && 
-    'addEventListener' in window) {
-
-    var toggleButtons = document.querySelectorAll('.toggle-content');
-    var fullTextWrappers = document.querySelectorAll('.fulltext');
-    var fullText;
-    var toggleButtonText;
-    
-
-    [].forEach.call(fullTextWrappers, function(fullTextWrapper) {
-        // hide all full text on load
-        fullTextWrapper.setAttribute('hidden', true);
-    });
-
-    [].forEach.call(toggleButtons, function(toggleButton) {
-        // show toggle more buttons
-        toggleButton.removeAttribute('hidden');
-
-        // add listener for each button
-        toggleButton.addEventListener('click', function () {
-
-            fullTextWrapper = this.parentElement.querySelector('.fulltext');
-            toggleButtonText = this.querySelector('.text');
-
-            // change attributes and text if full text is shown/hidden
-            if (!fullTextWrapper.hasAttribute('hidden')) {
-                toggleButtonText.innerText = 'Show More';
-                fullTextWrapper.setAttribute('hidden', true);
-                toggleButton.setAttribute('aria-expanded', false);
-            } else {
-                toggleButtonText.innerText = 'Show Less';
-                fullTextWrapper.removeAttribute('hidden');
-                toggleButton.setAttribute('aria-expanded', true);
-            }
-        });
-    });
-}
-
 
 function readMore() {
   var dots = document.getElementById("line-breaks");
