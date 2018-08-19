@@ -17,13 +17,13 @@ html, body {
   z-index: 2;
 }
 #logo img {
-  width: 52px;
+  width: 50px;
   border: 1px solid #ff6969;
 }
 #navbar {
   display: block;
   background-color: #f5f5f5;
-  padding: 15px 0;
+  padding: 14px 0;
   overflow: hidden;
   position: fixed; 
   top: 0; 
@@ -43,7 +43,8 @@ h1, h3 {
 }
 h1 {
   font-size: 40px;
-  padding-top: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 3vh;
 }
 h3 {
   font-size: 30px;
@@ -65,6 +66,7 @@ p {
   display: none;
 }
 #welcome-section div, #more {
+  padding: 0 20px;
   padding-top: 50px;
   margin-top: 25px;
   font-size: 21px;
@@ -128,7 +130,7 @@ p {
   grid-gap: 50px;
 }
 #codewars {
-  width: 30px;
+  width: 40px;
 }
 
 #projects {
@@ -231,6 +233,14 @@ textarea:hover, textarea:focus {
 @media only screen and (max-width: 900px) {
   #project-grid-container {
     grid-gap: 10px;
+}
+  #welcome-section {
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+  h1 {
+  padding-top: 100px;
 }
 @media only screen and (max-width: 500px) {
   #project-grid-container {
