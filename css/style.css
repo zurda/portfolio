@@ -215,6 +215,9 @@ textarea:hover, textarea:focus {
     border-color: #C9C9C9; 
     outline: 0 none;
 }
+.form-labels {
+  visibility: hidden;
+}
 #textarea-question,
 #thankYouMessage {
   font-size: 18px;

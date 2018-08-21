@@ -17,7 +17,7 @@
 
 <body>
   <!-- header section w/ logo and navbar -->
-<div id="logo"><a href="#welcome-section"><img src="https://www.hakabuk.com/fcc/resources/portfolio/logo.png"></a></div>
+<div id="logo"><a href="#welcome-section"><img src="https://www.hakabuk.com/fcc/resources/portfolio/logo.png" alt="logo"></a></div>
 <nav id="navbar">
   <a id="nav-welcome-section" class="nav active" href="#welcome-section" rel="internal">Home</a>
   <a id="nav-projects" class="nav" href="#projects">Projects</a>
@@ -88,10 +88,12 @@
         
         <p id="textarea-question">Want to chat about a project?<br>Please fill in your details and area of interest in the box below:</p>
         
+        <label class="form-labels" for="email"></label>
         <input id="email" type="email" name="email" placeholder="email" required />
         
         <br>
-        <label for="textarea"></label>
+
+        <label class="form-labels" for="textarea"></label>
         <textarea id="message" name="message" class="glowing-border"required ></textarea>
         
         <button id="submit-btn" type="submit" value="Submit">Submit</button>
