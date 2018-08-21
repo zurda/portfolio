@@ -30,7 +30,7 @@
     <h1>Hi, my name is Michal.</h1>
     <p>I'm an aspiring Web Developer,</br>and I'm passionate about building intuitive and beautiful UI's.<span id="line-breaks"><br><br></span><span id="more"><br><br>I'm an Ex-journalist and self taught programmer. I began my career transition a couple of years ago as part of a group called SheCodes. Since then, I've leanred HTML, CSS, JavaScript, and Python, which lead me to a role in a startup that teaches Data Science. I helped students make a similar transition into computer science related fields, which was extremely rewarding.<br>I fell in love with working on websites' code and discovering their structure, and my goal is to keep learning so that I could build simple yet beautiful UI's.</span></p>
 
-    <button onclick="readMore()" id="read-more-btn">Read more</button>
+    <button onclick="readMore()" id="read-more-btn">Read More</button>
   
 
     <div id="icon-grid-container">
@@ -88,12 +88,13 @@
         
         <p id="textarea-question">Want to chat about a project?<br>Please fill in your details and area of interest in the box below:</p>
         
-        <textarea name="message" class="glowing-border"></textarea><br>
-        
-        <label for="email">Email: </label>
         <input id="email" type="email" name="email" placeholder="email" required />
         
-        <input id="submit-btn" type="submit" value="Submit"></input>
+        <br>
+
+        <textarea id="message" name="message" class="glowing-border"required ></textarea>
+        
+        <button id="submit-btn" type="submit" value="Submit">Submit</button>
       </div>
 
         <div class="thankyou_message" style="display:none;">
