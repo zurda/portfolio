@@ -1,8 +1,17 @@
+/* colors 
+
+Background nav: #f2faff;
+Background welcome: #428ba1;
+Call to action: #cc7d3d;
+Project tiles: #c5d0d6;
+black: #313332;
+*/ 
+
 /* GENERAL */ 
 
 html, body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f5f5f5; 
+  background-color: #f2faff; 
   text-align: center;
 }
 * {
@@ -21,6 +30,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin: 20px auto;
+  color: #428ba1;
 }
 h3 {
   font-size: 26px;
@@ -30,7 +40,11 @@ p {
   font-size: 22px;
   padding-bottom: 18px;
 }
-
+.section-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 /* TOP NAVBAR */ 
 
 #logo {
@@ -40,14 +54,14 @@ p {
   left: 0px;
   top: 0px;
   z-index: 2;
+  box-sizing: border-box;
 }
 #logo img {
   width: 50px;
-  border: 1px solid #ff6969;
 }
 #navbar {
   display: block;
-  background-color: #f5f5f5;
+  background-color: #f2faff;
   padding: 14px 0;
   overflow: hidden;
   position: fixed; 
@@ -60,16 +74,17 @@ p {
 #nav-contact {
   text-decoration: none;
   padding: 0 30px 10px 30px;
-  color: #ff6969;
+  color: #313332;
 }
 .active {
-  border-bottom: 15px solid #9fe3c3;
+  border-bottom: 15px solid #ed8a39;
 }
 
 /* WELCOME SECTION */ 
 
 #welcome-section {
-  background-color: #9fe3c3;
+  color: #ffffff;
+  background-color: #428ba1;
   height: 100vh;
   text-align: center;
 }
@@ -79,11 +94,11 @@ p {
 #read-more-btn {
   font-size: 18px;
   padding: 12px;
-  background-color: #ff6969;
-  border: 2px solid #ff6969;
+  background-color: #cc7d3d;
+  border: 2px solid #cc7d3d;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px #808785;
+  box-shadow: 1px 1px 1px #313332;
   display: block;
   outline:none;
   color: white;
@@ -106,14 +121,11 @@ p {
   border: 2px solid #ff6969;
   color: #ff6969;
 }
-
 #welcome-section div, #more {
-  padding: 0 20px;
   padding-top: 50px;
   margin-top: 25px;
   font-size: 21px;
   text-align: center;
-
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
       -ms-animation: fadein 2s; /* Internet Explorer */
@@ -148,7 +160,10 @@ p {
 /* ICONS */ 
 
 .fab {
-  color: black;
+  color: #ffffff;
+}
+#codewars {
+  width: 40px;
 }
 #github-text span, #codepen-text span, 
 #codewars-text span, #fcc-text span {
@@ -156,7 +171,7 @@ p {
 }
 #github-text:hover span, #codepen-text:hover span, 
 #codewars-text:hover span, #fcc-text:hover span {
-  color: black;
+  color: #ffffff;
   font-size: 16px;
   display: block;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -173,38 +188,34 @@ p {
   padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 50px;
+  grid-gap: 0px;
 }
-#codewars {
-  width: 40px;
-}
+
+/* PROJECT SECTION */ 
 #projects {
   margin: 0 auto;
   text-align: center;
 }
-
-/* PROJECT SECTION */ 
-.section-content {
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 #project-grid-container {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
   padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  grid-gap: 2em;
+  grid-gap: 3em;
   align-items: start;
 }
 .project-tile {
-  height: 340px;
-  background-color: #e6e4e3;
- }
-.project-tile p {
-  font-size: 14px;
-  text-align: left;
+  min-height: 360px;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.project-tile:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.project-tile h4 {
+  font-size: 16px;
   padding: 10px;
 }
 .project-tile img {
@@ -213,7 +224,7 @@ p {
 }
 .project-tile h3 {
   padding-bottom: 0;
-  color: #4adb97;
+  color: #313332;
 }
 .project-tile a {
   text-decoration: none;
@@ -246,7 +257,6 @@ textarea{
   font: normal 18px/100% Verdana, Tahoma, sans-serif; 
   height: 250px;
   background: #FFFFFF; 
-  box-sizing: border-box;
 }
 #email:hover, #email:focus,
 textarea:hover, textarea:focus { 
@@ -260,13 +270,12 @@ textarea:hover, textarea:focus {
 #thankYouMessage {
   font-size: 18px;
   margin: 10px auto;
-  max-width: 800px;
 }
 #submit-btn {
   font-size: 18px;
   padding: 12px;
-  background-color: #ff6969;
-  border: 2px solid #ff6969;
+  background-color: #cc7d3d;
+  border: 2px solid #cc7d3d;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #808785;
@@ -288,8 +297,8 @@ textarea:hover, textarea:focus {
 }
 #submit-btn:active {
   background-color: white;
-  border: 2px solid #ff6969;
-  color: #ff6969;
+  border: 2px solid #cc7d3d;
+  color: #cc7d3d;
 }
 
 /* footer */ 
@@ -297,11 +306,11 @@ textarea:hover, textarea:focus {
   padding: 8px 0;
   margin: 0;
   font-size: 14px;
-  background: #f5f5f5;
-  color: #ff6969;
+  background: #428ba1;
+  color: white;
 }
 .credit a {
-  color: #ff3333;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
