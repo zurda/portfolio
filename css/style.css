@@ -172,39 +172,26 @@ form {
   margin-right: auto;
   font-size: 18px;
 }
-input {
-  font-size: 18px;
-}
 #email {
-  height: 24px;
   font-size: 18px;
-  width: 200px;
-}
-#email:focus {   
-  outline: none;
-}
-#submit-btn, #read-more-btn {
-  font-size: 18px;
-  padding: 5px 15px;
-  background-color: #ff6969;
-  border: 0;
+  border-radius: 10px;
+  border: solid 1px #E5E5E5; 
+  padding: 5px 5px 5px 10px; 
+  font: normal 18px/100% Verdana, Tahoma, sans-serif; 
+  width: 350px;
   margin: 20px auto;
-  border-radius: 50px;
-  box-shadow: 1px 1px 1px #808785;
-  vertical-align:top;
-  display: block;
-  outline:none;
-  color: white;
 }
 textarea{
-  padding: 5px; 
+  padding: 5px 5px 5px 10px; 
+  border-radius: 10px;
   border: solid 1px #E5E5E5; 
-  font: normal 16px/100% Verdana, Tahoma, sans-serif; 
-  width: 400px; 
+  font: normal 18px/100% Verdana, Tahoma, sans-serif; 
+  width: 345px; 
   height: 200px;
   background: #FFFFFF; 
   box-sizing: border-box;
 }
+#email:hover, #email:focus,
 textarea:hover, textarea:focus { 
     border-color: #C9C9C9; 
     outline: 0 none;
@@ -215,6 +202,69 @@ textarea:hover, textarea:focus {
   margin: 10px auto;
   max-width: 800px;
 }
+#submit-btn {
+  font-size: 18px;
+  padding: 12px;
+  background-color: #ff6969;
+  border: 2px solid #ff6969;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #808785;
+  display: block;
+  outline:none;
+  color: white;
+  width: 120px;
+  cursor:pointer;
+  overflow:hidden;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#submit-btn:hover {
+  -webkit-transform:scale(1.048); /* Safari and Chrome */
+  -moz-transform:scale(1.048); /* Firefox */
+  -ms-transform:scale(1.048); /* IE 9 */
+  -o-transform:scale(1.048); /* Opera */
+  transform:scale(1.048);
+}
+#submit-btn:active {
+  background-color: white;
+  border: 2px solid #ff6969;
+  color: #ff6969;
+}
+
+#read-more-btn {
+  font-size: 18px;
+  padding: 12px;
+  background-color: #ff6969;
+  border: 2px solid #ff6969;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #808785;
+  display: block;
+  outline:none;
+  color: white;
+  width: 120px;
+  cursor:pointer;
+  overflow:hidden;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#read-more-btn:hover {
+  -webkit-transform:scale(1.048); /* Safari and Chrome */
+  -moz-transform:scale(1.048); /* Firefox */
+  -ms-transform:scale(1.048); /* IE 9 */
+  -o-transform:scale(1.048); /* Opera */
+  transform:scale(1.048);
+}
+#read-more-btn:active {
+  background-color: white;
+  border: 2px solid #ff6969;
+  color: #ff6969;
+}
+
+
 /* footer */ 
 .credit {
   padding: 8px 0;
