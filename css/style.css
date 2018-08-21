@@ -77,7 +77,7 @@ p {
   color: #313332;
 }
 .active {
-  border-bottom: 15px solid #ed8a39;
+  border-bottom: 15px solid #ff4242;
 }
 
 /* WELCOME SECTION */ 
@@ -90,12 +90,14 @@ p {
 }
 #more {
   display: none;
+  color: black;
+  line-height: 1.4em;
 }
 #read-more-btn {
   font-size: 18px;
   padding: 12px;
-  background-color: #cc7d3d;
-  border: 2px solid #cc7d3d;
+  background-color: #ff4242;
+  border: 2px solid #ff4242;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #313332;
@@ -118,13 +120,13 @@ p {
 }
 #read-more-btn:active {
   background-color: white;
-  border: 2px solid #ff6969;
-  color: #ff6969;
+  border: 2px solid #ff4242;
+  color: #ff4242;
 }
 #welcome-section div, #more {
   padding-top: 50px;
   margin-top: 25px;
-  font-size: 21px;
+  font-size: 16px;
   text-align: center;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -258,6 +260,9 @@ textarea{
   height: 250px;
   background: #FFFFFF; 
 }
+#email:focus, textarea:focus {
+  background-color: #fffcfc;
+}
 #email:hover, #email:focus,
 textarea:hover, textarea:focus { 
     border-color: #C9C9C9; 
@@ -274,8 +279,8 @@ textarea:hover, textarea:focus {
 #submit-btn {
   font-size: 18px;
   padding: 12px;
-  background-color: #cc7d3d;
-  border: 2px solid #cc7d3d;
+  background-color: #ff4242;
+  border: 2px solid #ff4242;
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #808785;
@@ -297,8 +302,8 @@ textarea:hover, textarea:focus {
 }
 #submit-btn:active {
   background-color: white;
-  border: 2px solid #cc7d3d;
-  color: #cc7d3d;
+  border: 2px solid #ff4242;
+  color: #ff4242;
 }
 
 /* footer */ 
@@ -307,11 +312,11 @@ textarea:hover, textarea:focus {
   margin: 0;
   font-size: 14px;
   background: #428ba1;
-  color: white;
+  color: black;
 }
 .credit a {
-  color: white;
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
   font-weight: bold;
 }
 @media only screen and (max-width: 900px) {
