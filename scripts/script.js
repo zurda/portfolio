@@ -4,7 +4,7 @@
 (function(window, undefined) // Code in a function to create an isolate scope
 {
     'use strict';
-    var height_fixed_header = 0, // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
+    var height_fixed_header = 50, // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
         speed = 500,
         moving_frequency = 15, // Affects performance ! High number makes scroll more smooth
         links = document.getElementsByTagName('a'),
