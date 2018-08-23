@@ -53,7 +53,7 @@ p {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 2;
+  z-index: 5;
   box-sizing: border-box;
 }
 #logo img {
@@ -68,6 +68,7 @@ p {
   top: 0; 
   width: 100%;
   text-align: right;
+  z-index: 4;
 }
 #nav-welcome-section,
 #nav-projects,
@@ -90,8 +91,7 @@ p {
 }
 #more {
   display: none;
-  color: black;
-  line-height: 1.4em;
+  text-shadow: 1px 1px #585858;
 }
 #read-more-btn {
   font-size: 18px;
@@ -107,8 +107,8 @@ p {
   width: 120px;
   cursor:pointer;
   overflow:hidden;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
 }
 
 #read-more-btn:hover {
@@ -123,9 +123,19 @@ p {
   border: 2px solid #ff4242;
   color: #ff4242;
 }
-#welcome-section div, #more {
+.section-content, .icon-grid-container {
   padding-top: 50px;
-  margin-top: 25px;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+#more {
   font-size: 16px;
   text-align: center;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -187,6 +197,7 @@ p {
   text-decoration: none;
 }
 #icon-grid-container {
+  margin-top: 40px;
   padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
