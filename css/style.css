@@ -175,18 +175,18 @@ p {
 
 /* ICONS */ 
 
-.fab {
+.fab, .fas {
   color: #ffffff;
 }
 #codewars {
   width: 40px;
 }
 #github-text span, #codepen-text span, 
-#codewars-text span, #fcc-text span {
+#linkedin-text span, #codesandbox-text span {
   display: none;
 }
 #github-text:hover span, #codepen-text:hover span, 
-#codewars-text:hover span, #fcc-text:hover span {
+#linkedin-text:hover span, #codesandbox-text:hover span {
   color: #ffffff;
   font-size: 16px;
   display: block;
@@ -197,7 +197,7 @@ p {
     animation: fadein 1s;
 }
 #github-text, #codepen-text, 
-#codewars-text, #fcc-text {
+#linkedin-text, #codesandbox-text {
   text-decoration: none;
 }
 #icon-grid-container {
