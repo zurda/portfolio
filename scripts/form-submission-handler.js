@@ -6,11 +6,9 @@
 
   function validateHuman(honeypot) {
     if (honeypot) {
-      //if hidden form filled up
-      console.log("Robot Detected!");
       return true;
     } else {
-      console.log("Welcome Human!");
+      return false;
     }
   }
 
@@ -69,10 +67,10 @@
     var data = getFormData(form); // get the values submitted in the form
 
     // OPTION: Remove this comment to enable SPAM prevention, see README.md
-    if (validateHuman(data.honeypot)) {
-      //if form is filled, form will not be submitted
-      return false;
-    }
+    // if (validateHuman(data.honeypot)) {
+    //   //if form is filled, form will not be submitted
+    //   return false;
+    // }
 
     if (data.email && !validEmail(data.email)) {
       // if email is not valid show error
