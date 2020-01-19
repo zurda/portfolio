@@ -9,10 +9,15 @@ jobs:
     steps:
       - name: Sleep for 5m minutes
         run: sleep 300
-      - uses: actions/checkout@v1
-      - name: Generate Lighthouse Report
-        uses: justinribeiro/lighthouse-action@master
-        with:
-          secret: ${{ secrets.GITHUB_TOKEN }}
-          url: https://zurda.github.io/portfolio/
-          wptConnectionSpeed: threegfast
+      - uses: actions/checkout@master
+    - run: mkdir /tmp/artifacts
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      with:
+        outputDirectory: /tmp/artifacts
+        urls: 'https://zurda.github.io/portfolio'
+    - name: Upload artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: Lighthouse reports
+        path: /tmp/artifacts
