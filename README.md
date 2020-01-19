@@ -21,16 +21,24 @@ The main goal of this project was fiddling around with lighthouse audit:
 <img src="./portfolio-audit.png" 
 alt="Screen grab of lighthouse audit" width="500" />
 
+and Lighthouse audit actions on every PR: 
+
+<img src="./lighthouse-pr-audit.png" 
+alt="Screen grab of lighthouse audit on every PR" width="500" />
+
+
 ### Things I've learned 
 
 - Adding lighthouse audits is really nice (there's really no reason for a simple website not to pass these audits, but it's still a good reminder if we accidentally miss something)
+- Worth looking into how to run these lighthouse actions **after** a deploy. Otherwise we'll only find out about problems on the next PR. 
 - Past me really liked `ID`s. Not sure why. Dear future me: please fix this! 🥺
 - The page was set to deploy on every `gh-pages` branch update rather than master
 
 ### Still to do
 
-- Swap out `ID`s with `Class`
+- Swap out `ID`s with `Class`es
 - Find a better way to display CV 
+- Looking into lighthouse actions after deploying 
 
 ## Contributions
 
