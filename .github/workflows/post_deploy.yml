@@ -1,5 +1,6 @@
 name: Post deploy audit
-push:
+on:
+  push:
     branches:
       - master
 jobs:
