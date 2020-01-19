@@ -9,7 +9,7 @@ jobs:
         uses: justinribeiro/lighthouse-action@master
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          url: https://${{ github.sha }}-dot-${{ secrets.GAE_PID }}.appspot.com
+          url: https://zurda.github.io/portfolio
           wptConnectionSpeed: threegfast
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
