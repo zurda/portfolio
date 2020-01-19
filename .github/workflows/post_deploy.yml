@@ -1,0 +1,22 @@
+name: Post deploy audit
+push:
+    branches:
+      - master
+jobs:
+  perf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 5m minutes
+        run: sleep 300
+      - uses: actions/checkout@v1
+      - name: Generate Lighthouse Report
+        uses: justinribeiro/lighthouse-action@master
+        with:
+          secret: ${{ secrets.GITHUB_TOKEN }}
+          url: https://zurda.github.io/portfolio/
+          wptConnectionSpeed: threegfast
+      - name: Saving Lighthouse Audit Artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: lighthouse-artifacts
+          path: './results'
