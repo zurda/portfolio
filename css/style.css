@@ -70,13 +70,13 @@ p {
   text-align: right;
   z-index: 4;
 }
-#nav-welcome-section,
-#nav-projects,
-#nav-contact {
+
+.nav {
   text-decoration: none;
   padding: 0 30px 10px 30px;
   color: #313332;
 }
+
 .active {
   border-bottom: 15px solid #ff4242;
 }
