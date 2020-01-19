@@ -279,6 +279,8 @@ textarea{
   height: 250px;
   background: #FFFFFF; 
   line-height: 28px;
+  min-height: 180px;
+  min-width: 280px;
 }
 #email:focus, textarea:focus {
   background-color: #fffcfc;

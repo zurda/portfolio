@@ -16,8 +16,3 @@ jobs:
           secret: ${{ secrets.GITHUB_TOKEN }}
           url: https://zurda.github.io/portfolio/
           wptConnectionSpeed: threegfast
-      - name: Saving Lighthouse Audit Artifacts
-        uses: actions/upload-artifact@master
-        with:
-          name: lighthouse-artifacts
-          path: './results'
