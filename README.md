@@ -18,7 +18,7 @@ The project was created using `semantic HTML`, `css`, and `css grid`. I also use
 
 The main goal of this project was fiddling around with lighthouse audit: 
 
-<img src="./audit-screen.png" 
+<img src="./portfolio-audit.png" 
 alt="Screen grab of lighthouse audit" width="500" />
 
 ### Things I've learned 
