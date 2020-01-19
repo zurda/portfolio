@@ -54,6 +54,7 @@ p {
   left: 0px;
   top: 0px;
   z-index: 5;
+  padding-left: 30px;
   box-sizing: border-box;
 }
 #logo img {
@@ -327,10 +328,10 @@ textarea:hover, textarea:focus {
   margin: 0;
   font-size: 14px;
   background: #428ba1;
-  color: black;
+  color: white;
 }
 .credit a {
-  color: black;
+  color: white;
   text-decoration: underline;
   font-weight: bold;
 }
