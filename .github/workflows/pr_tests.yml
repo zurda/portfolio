@@ -8,9 +8,8 @@ jobs:
       - name: Generate Lighthouse Report
         uses: justinribeiro/lighthouse-action@master
         with:
-          secret: ${{ secrets.GITHUB_TOKEN }}
-          url: https://zurda.github.io/portfolio
-          wptConnectionSpeed: threegfast
+          url: https://zurda.github.io/portfolio/
+          wptConnectionSpeed: fourg
       - name: Saving Lighthouse Audit Artifacts
         uses: actions/upload-artifact@master
         with:
