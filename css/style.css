@@ -131,11 +131,11 @@ p {
   margin-top: 40px;
   font-size: 16px;
   text-align: center;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.2s; /* Firefox < 16 */
+      -ms-animation: fadein 0.2s; /* Internet Explorer */
+        -o-animation: fadein 0.2s; /* Opera < 12.1 */
+          animation: fadein 0.2s;
 }
 
 #avatar {
@@ -145,11 +145,11 @@ p {
 #more {
   font-size: 16px;
   text-align: center;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.2s; /* Firefox < 16 */
+      -ms-animation: fadein 0.2s; /* Internet Explorer */
+        -o-animation: fadein 0.2s; /* Opera < 12.1 */
+          animation: fadein 0.2s;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -193,11 +193,11 @@ p {
   color: #ffffff;
   font-size: 16px;
   display: block;
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.2s; /* Firefox < 16 */
+    -ms-animation: fadein 0.2s; /* Internet Explorer */
+    -o-animation: fadein 0.2s; /* Opera < 12.1 */
+    animation: fadein 0.2s;
 }
 #github-text, #codepen-text, 
 #linkedin-text, #codesandbox-text {
