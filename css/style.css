@@ -21,6 +21,7 @@ html, body {
 }
 h1, h2, h3 {
   font-family: 'Rambla', sans-serif;
+  text-shadow: 1px 1px #585858;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h2 {
   font-size: 40px;
   margin: 20px auto;
   color: #428ba1;
+  text-shadow: 1px 1px #7d7d7d;
 }
 h3 {
   font-size: 26px;
@@ -39,6 +41,7 @@ h3 {
 p {
   font-size: 22px;
   padding-bottom: 18px;
+  text-shadow: 1px 1px #585858;
 }
 .section-content {
   text-align: center;
@@ -103,6 +106,7 @@ p {
   border-radius: 10px;
   box-shadow: 1px 1px 1px #313332;
   display: block;
+  text-shadow: 1px 1px #585858;
   outline:none;
   color: white;
   width: 120px;
@@ -301,6 +305,7 @@ textarea:hover, textarea:focus {
   margin: 20px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #808785;
+  text-shadow: 1px 1px #585858;
   display: block;
   outline:none;
   color: white;
@@ -330,11 +335,13 @@ textarea:hover, textarea:focus {
   font-size: 14px;
   background: #428ba1;
   color: white;
+  text-shadow: 1px 1px #585858;
 }
 .credit a {
   color: white;
   text-decoration: underline;
   font-weight: bold;
+  text-shadow: 1px 1px #585858;
 }
 @media only screen and (max-width: 800px) {
   .section-content {
