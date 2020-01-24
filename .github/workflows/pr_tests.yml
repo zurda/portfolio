@@ -1,4 +1,4 @@
-name: Audit Web Performance
+name: PR Audit
 on: [pull_request]
 jobs:
   perf:
