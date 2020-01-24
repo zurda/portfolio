@@ -1,3 +1,5 @@
+![Actions Status](https://github.com/zurda/portfolio/workflows/Post%20deploy%20audit/badge.svg) ![Actions Status](https://github.com/zurda/portfolio/workflows/PR%20Audit/badge.svg) 
+
 [![open issues](https://img.shields.io/github/issues/zurda/portfolio.svg)](https://github.com/zurda/portfolio/issues) [![help wanted issues open](https://img.shields.io/github/issues/zurda/portfolio/help%20wanted.svg)](https://github.com/zurda/portfolio/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) <a href="https://twitter.com/zur_da/follow?screen_name=zur_da">
     <img src="https://img.shields.io/twitter/follow/zur_da.svg?style=social&logo=twitter"
         alt="follow on Twitter">
