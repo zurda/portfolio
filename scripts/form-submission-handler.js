@@ -4,14 +4,6 @@
     return re.test(email);
   }
 
-  function validateHuman(honeypot) {
-    if (honeypot) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -66,12 +58,6 @@
     var form = event.target;
     var data = getFormData(form); // get the values submitted in the form
 
-    // OPTION: Remove this comment to enable SPAM prevention, see README.md
-    // if (validateHuman(data.honeypot)) {
-    //   //if form is filled, form will not be submitted
-    //   return false;
-    // }
-
     if (data.email && !validEmail(data.email)) {
       // if email is not valid show error
       var invalidEmail = form.querySelector(".email-invalid");
@@ -84,11 +70,8 @@
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url);
-      // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function () {
-        // console.log(xhr.status, xhr.statusText);
-        // console.log(xhr.responseText);
         var formElements = form.querySelector(".form-elements");
         if (formElements) {
           formElements.style.display = "none"; // hide form
