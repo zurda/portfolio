@@ -81,7 +81,7 @@ const listRepos = async username => {
     ).then(res => res.json());
 
     const content = document.getElementById('repos');
-    const markup = repos.slice(0, 15).map(
+    const markup = repos.slice(0, 8).map(
         repo => `
     <li>
       <a href="${repo.html_url}">${repo.name}</a> 
